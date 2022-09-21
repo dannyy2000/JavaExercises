@@ -5,7 +5,7 @@ public class MyArray {
 
         int[] array = new int[10];
         for(int i = 0;i < array.length;i++){
-            array[i] = i*10;
+            array[i] = i*20;
             System.out.printf("The element %d value is %d%n",i,array[i]);
 
         }
