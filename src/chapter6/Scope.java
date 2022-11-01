@@ -10,8 +10,8 @@ public class Scope {
         System.out.printf("The Local x in main  is %d%n",x);
 
         useField();
-        useLocalVariable();
         useField();
+        useLocalVariable();
         useLocalVariable();
 
 
@@ -32,7 +32,7 @@ public class Scope {
     private static void useField() {
         System.out.printf("The field x before entering method %d%n",x);
 
-        x = 10;
+        x *=10;
 
         System.out.printf("The field x before exiting the method %d%n",x);
     }
