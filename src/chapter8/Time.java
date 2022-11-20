@@ -13,8 +13,6 @@ public class Time {
         this.minutes = minutes;
         this.second = second;
 
-
-
     }
     public Time(int hour){
         this(hour,0,0);
@@ -26,8 +24,6 @@ public class Time {
     public Time(){
         this(0,0,0);
     }
-
-
 
 
     public void setHour(int hour) {
@@ -55,13 +51,14 @@ public class Time {
         return second;
     }
 
-    public void validateTime(int hour, int minutes, int second) {
+    public static void validateTime(int hour, int minutes, int second) {
         validateHour(hour);
         validateMinutes(minutes);
         validateSecond(second);
+
     }
 
-    private static void validateSecond(int second) {
+    public static void validateSecond(int second) {
         boolean secondIsInvalid = second < 0 || second > 59;
 
         if (secondIsInvalid){
@@ -69,7 +66,7 @@ public class Time {
         }
     }
 
-    private  static void validateMinutes(int minutes) {
+    public   static void validateMinutes(int minutes) {
         boolean minutesIsInvalid = minutes < 0 || minutes > 59;
 
         if (minutesIsInvalid){
@@ -78,7 +75,7 @@ public class Time {
 
     }
 
-    private static void validateHour(int hour){
+    public static void validateHour(int hour){
         boolean hourIsInvalid = hour < 0 || hour > 59;
 
         if (hourIsInvalid){

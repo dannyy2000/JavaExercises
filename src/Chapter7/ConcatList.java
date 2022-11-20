@@ -8,12 +8,15 @@ public class ConcatList {
         int[] newList = {arrayList1 + arrayList};
 
         int[] result = new int[newList.length];
+        int pos = 0;
 
         for (int numbers : list1) {
-            result = list1;
+            result[pos]= numbers;
+            pos++;
         }
         for (int numbers : list2) {
-            result = list2;
+            result[pos] = numbers;
+            pos++;
         }
 
          return result;

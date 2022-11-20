@@ -2,6 +2,7 @@ package tdd;
 
 import Tdd.ComparingInteger;
 import org.junit.jupiter.api.BeforeEach;
+import org.testng.annotations.BeforeMethod;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -9,9 +10,9 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class ComparingIntegerTest {
 
-    @BeforeEach
-    public void startAllTestWith(){
-        ComparingInteger comparingInteger = new ComparingInteger();
+    @BeforeMethod
+    public void setUp(){
+       ComparingInteger comparingInteger = new ComparingInteger();
     }
     @Test
     public void testThatObjectsExists(){

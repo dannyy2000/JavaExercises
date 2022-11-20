@@ -20,7 +20,7 @@ public class AirConditionerTest {
         // I turn it on
         myAc.setOn(true);
         // check that A.c is on
-        assertTrue(true);
+        assertEquals(true,myAc.getAcIsOn());
     }
 
     @Test
@@ -29,9 +29,9 @@ public class AirConditionerTest {
         AirConditioner myAc = new AirConditioner();
         myAc.setOn(true);
         // when I turn it off
-        myAc.setOff(true);
+        myAc.setOff(false);
         // check that A.c is off
-        assertTrue(true);
+        assertEquals(false,myAc.isOff());
 
     }
 

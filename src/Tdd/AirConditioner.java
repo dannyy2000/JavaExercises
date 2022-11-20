@@ -3,6 +3,7 @@ package Tdd;
 public class AirConditioner {
 
     private boolean isOn;
+
     private boolean isOff;
     private int temperature;
 
@@ -12,6 +13,14 @@ public class AirConditioner {
 
     public void setOff(boolean value) {
         isOff = value;
+    }
+
+    public boolean getAcIsOn(){
+        return isOn;
+    }
+
+    public boolean isOff() {
+        return isOff;
     }
 
     public int getTemperature() {
