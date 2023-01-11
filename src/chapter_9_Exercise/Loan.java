@@ -4,6 +4,7 @@ public class Loan {
     private double loanAmount;
     private double loanTenure;
 
+
     public Loan(double loanAmount, double loanTenure) {
         this.loanAmount = loanAmount;
         this.loanTenure = loanTenure;

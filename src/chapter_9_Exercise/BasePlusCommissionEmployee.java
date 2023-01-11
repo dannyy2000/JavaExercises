@@ -9,7 +9,7 @@ public class BasePlusCommissionEmployee {
     private  String lastName;
     private String firstName;
 
-    private CommissionEmployee commissionEmployee;
+//    private CommissionEmployee commissionEmployee;
     private double baseSalary;
 
     public BasePlusCommissionEmployee(CommissionEmployee commissionEmployee,double baseSalary) {

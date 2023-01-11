@@ -20,7 +20,7 @@ public class CreditLimitCal {
         int newBalance = balance + charges - totalCredit;
         System.out.printf("The new  balance is %d%n",newBalance);
 
-        if(newBalance < creditLimit){
+        if(newBalance > creditLimit){
             System.out.println("Credit limit exceeded");
         }
         else{
