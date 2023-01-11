@@ -14,9 +14,6 @@ public class HomeLoan extends Loan{
         return interestRate;
    }
 
-   public void setInterestRate(double interestRate) {
-       this.interestRate = interestRate;
-   }
 
     public double MonthlyInstallments(){
         return getLoanAmount() * (getInterestRate() * Math.pow(1 + getInterestRate(),getLoanTenure())) /
