@@ -1,4 +1,4 @@
-package Chapter16;
+package Chapter16.List;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +11,6 @@ public class Example {
         words.add("Obidients");
         words.add("Atikulate");
 
-        System.out.println(words );
+        System.out.println(words);
     }
 }
