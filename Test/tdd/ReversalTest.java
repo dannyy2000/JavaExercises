@@ -9,9 +9,9 @@ public class ReversalTest {
     @Test
     public void reverseArrayTest(){
         Reversal reversal = new Reversal();
-        int[] list = {2,4};
+        int[] list = {12,13,14,15};
         int[] reverseArray = Reversal.reverseArray(list);
-        assertEquals(new int[]{4,2},reverseArray);
+        assertEquals(new int[]{15,14,13,12},reverseArray);
 
     }
 

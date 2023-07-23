@@ -10,7 +10,15 @@ public class Palindrome {
             reverse[j] = word[i];
         }
         return reverse;
+
     }
+
+
+
+
+
+
+
 
 
     public static int[] intPalindrome(int[] numbers) {
