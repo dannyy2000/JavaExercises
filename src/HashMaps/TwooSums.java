@@ -9,21 +9,24 @@ public class TwooSums {
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
 
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i <nums.length;i++) {
+                for (int j = i + 1; j < nums.length; j++) {
+
+                   numMap.put(i,nums[i]);
+                   numMap.put(j,nums[j]);
+
+                   if(numMap.get(i) + numMap.get(j) == target){
+                       return new int[]{i,j};
+                   }
 
 
-            numMap.put(i, nums[i]);
-            numMap.put(i+1, nums[i + 1]);
-
-            if (numMap.get(i) + numMap.get(i + 1) == target) {
-                return new int[]{i, i + 1};
-            }
 
 
         }
-        return new int[]{-1, -1};
-    }
 
+    }
+        return new int[]{-1, -1};
+}
 
 
     public static void main(String[] args) {
