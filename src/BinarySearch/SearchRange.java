@@ -24,12 +24,19 @@ public class SearchRange {
             else {
                 tempNum[count] = start;
                 count++;
-                tempNum[count] = end;
-             return tempNum;
+
 
             }
 
-
+            if(count > 0) {
+                while (count < 2 && tempNum[count - 1] < nums.length - 1 && nums[tempNum[count - 1] + 1] == target ) {
+                    tempNum[count] = tempNum[count - 1] + 1;
+                    count++;
+                }
+            }
+            if(count == 2){
+                return tempNum;
+            }
         }
 
         return new int[]{-1, -1};
@@ -37,8 +44,8 @@ public class SearchRange {
 
     public static void main(String[] args) {
 
-        int [] num = {5,7,7,8,8,10};
-        int target = 8;
+        int [] num = {1};
+        int target = 1;
         System.out.println((Arrays.toString(searchRange(num,target))));
 
     }
